@@ -42,12 +42,14 @@ mydict = {
 def printmd(mystr):
     display(Markdown(mystr))
     
-printmd('#### Welcome to MYCHINESE CHAR app')
-printmd('----')
-printmd("please type ** finish ** to exit the app")
-printmd("This app has dynamic probabilities per char that are updated following your score.")
-printmd("P❤️A")
-printmd('----')
+
+def print_instructions():
+    printmd('### Welcome to MYCHINESE CHAR app')
+    printmd('----')
+    printmd("please type ** finish ** to exit the app")
+    printmd("This app has dynamic probabilities per char that are updated following your score.")
+    printmd('----')
+print_instructions()
     
 def normalize_w(weights):
     return weights/np.sum(weights)
@@ -90,3 +92,4 @@ def askarandom(mydict=mydict,probab_coef=0.05):
             please_continue = False
             break
         clear_output()
+        print_instructions()
