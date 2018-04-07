@@ -1,11 +1,3 @@
-import pinyin,random,time
-import numpy as np
-
-from IPython.display import Markdown, display
-from IPython.display import clear_output
-
-from mydics import *
-
 '''
 import pinyin
 
@@ -22,16 +14,6 @@ mydict = {
 }
 
 mydict = {
-'一':['yi1'],
-'二':['er4'],
-'三':['san1'],
-'四':['si4'],
-'五':['wu3'],
-'六':['liu4'],
-'七':['qi1'],
-'八':['ba1'],
-'九':['jiu3'],
-'十':['shi2'],
 '饮料':['yin3liao4','bebida','drink'],
 '可乐':['ke3le4','cola','coke'],
 '水':['shui3','water'],
@@ -44,11 +26,70 @@ mydict = {
 '葡萄':['pu2tao2','grape'],
 '葡萄酒':['pu2tao2jiu3','wine'],
 '红':['hong2','red'],
-'黄':['huang2','yellow'],
-'蓝':['lan2','blue'],
-'绿':['lv4','green'],
-'黑':['hei1','black'],
-'白':['bai2','wite'],
+'白':['bai2','wite']
+}
+
+
+numbers = {
+'一':['yi1'],
+'二':['er4'],
+'三':['san1'],
+'四':['si4'],
+'五':['wu3'],
+'六':['liu4'],
+'七':['qi1'],
+'八':['ba1'],
+'九':['jiu3'],
+'十':['shi2']
+}
+
+positions = {
+
+}
+
+family = {
+
+}
+
+verbs = {
+    '想':['xiang3'],
+    '喝':['he1'],
+    '要':['yao4'],
+    '':[''],
+}
+
+questions = {
+'几':['ji3'],
+}
+
+countries = {
+
+}
+
+drinks = {
+'饮料':['yin3liao4','bebida','drink'],
+'可乐':['ke3le4','cola','coke'],
+'水':['shui3','water'],
+'茶':['cha2','tea'],
+'果汁':['guo3zhi1','fruit juice'],
+'咖啡':['ka1fei1','coffee'],
+'牛奶':['niu2nai3','milk'],
+'喝酒':['he1jiu3','drink alcohol'],
+'啤酒':['pi2jiu3','beer'],
+'葡萄':['pu2tao2','grape'],
+'葡萄酒':['pu2tao2jiu3','wine']
+}
+
+colours = {
+    '红':['hong2','red'],
+    '黄':['huang2','yellow'],
+    '蓝':['lan2','blue'],
+    '绿':['lv4','green'],
+    '黑':['hei1','black'],
+    '白':['bai2','wite']
+}
+
+sentences = {
 '你们好，你们要喝什么?':['ni3men2hao3, ni3men2yao4he1shen2me',''],
 '我想要喝茶， 谢谢':['wo3xiang3yao4he1cha2, xie4xie4'],
 '我不想喝茶，我想要喝咖啡':['wo3bu4xiang3he1cha2, wo3xiang3yao4he1ka1fei1'],
@@ -69,57 +110,6 @@ mydict = {
 '我不忙，你男朋友呢？':['wo3bu4mang2, ni3nan2peng2you3ne']
 }
 
-def printmd(mystr):
-    display(Markdown(mystr))
-    
 
-def print_instructions():
-    printmd('### Welcome to MYCHINESE CHAR app')
-    printmd('----')
-    printmd("please type ** finish ** to exit the app")
-    printmd("This app has dynamic probabilities per char that are updated following your score.")
-    printmd('----')
-print_instructions()
-    
-def normalize_w(weights):
-    return weights/np.sum(weights)
-    
-def update_w(weights,indx,isCorrect,probab_coef=0.05):
-    mydelta = probab_coef*(1/len(weights))
-    if isCorrect:
-        weights[indx] = weights[indx] - mydelta
-    else:
-        weights[indx] = weights[indx] + mydelta
-    return normalize_w(weights)
 
-def askarandom(mydict=mydict,probab_coef=0.05):
-    #TODO, with memory, choose the ones that have more failures
-    # https://stackoverflow.com/questions/4113307/pythonic-way-to-select-list-elements-with-different-probability
-    keys = [k for k in mydict]
-    values = [mydict[k] for k in mydict]
-    weights = np.ones(len(keys))
-    weights = normalize_w(weights)
-    please_continue = True
-    while please_continue:
-        rand_index = int( np.random.choice(len(keys),size=1,replace=True,p=weights) )
-        myrnd = keys[rand_index]
-        true_ans = values[rand_index]
-        #true_ans = pinyin.get(myrnd, format="numerical")
-        printmd('# '+myrnd)
-        ans = input("Type the pinyin of the character below >")
-        #
-        weights = update_w(weights,rand_index,ans in true_ans,probab_coef=0.05)
-        #
-        if ans in true_ans:
-            printmd("<font color='green'> ** correct ** " + str(true_ans)+" </font>")
-        elif ans in ['END','FINISH','finish','stop','STOP']:
-            please_continue = False
-            break
-        else:
-            printmd("<font color='red'> ** wrong, answer is > "+str(true_ans)+" ** </font>")
-        ans = input("Continue [ANY KEY] or Finish ['finish']")
-        if ans in ['END','FINISH','finish','stop','STOP']:
-            please_continue = False
-            break
-        clear_output()
-        print_instructions()
+
