@@ -22,51 +22,58 @@ mydict = {
 }
 
 mydict = {
-'一':['yi1'],
-'二':['er4'],
-'三':['san1'],
-'四':['si4'],
-'五':['wu3'],
-'六':['liu4'],
-'七':['qi1'],
-'八':['ba1'],
-'九':['jiu3'],
-'十':['shi2'],
-'饮料':['yin3liao4','bebida','drink'],
-'可乐':['ke3le4','cola','coke'],
-'水':['shui3','water'],
-'茶':['cha2','tea'],
-'果汁':['guo3zhi1','fruit juice'],
-'咖啡':['ka1fei1','coffee'],
-'牛奶':['niu2nai3','milk'],
-'喝酒':['he1jiu3','drink alcohol'],
-'啤酒':['pi2jiu3','beer'],
-'葡萄':['pu2tao2','grape'],
-'葡萄酒':['pu2tao2jiu3','wine'],
-'红':['hong2','red'],
-'黄':['huang2','yellow'],
-'蓝':['lan2','blue'],
-'绿':['lv4','green'],
-'黑':['hei1','black'],
-'白':['bai2','wite'],
-'你们好，你们要喝什么?':['ni3men2hao3, ni3men2yao4he1shen2me',''],
-'我想要喝茶， 谢谢':['wo3xiang3yao4he1cha2, xie4xie4'],
-'我不想喝茶，我想要喝咖啡':['wo3bu4xiang3he1cha2, wo3xiang3yao4he1ka1fei1'],
-'林娜，这是谁？':['lin2na4, zhe4shi4shei2'],
-'这是我妹妹':['zhe4shi4wo3mei4mei'],
-'你好，你们想要喝什么？':['ni3hao3, ni3me2xiang3yao4he1shen2me'],
-'我要喝可乐':['wo3yao4he1ke3le4'],
-'好的，你们都喝可乐':['hao3de, ni3mendou1he1ke3le4'],
-'你是哪国人？':['ni3shi4na3guo2ren2'],
-'我是中国人':['wo3shi4zhong1guo2ren2'],
-'你几岁':['ni3ji3sui4'],
-'我二十五岁':['wo3er4shi2wu4sui4'],
-'你想吃什么?':['ni3xiang3chi1shen2me'],
-'我想吃面':['wo3xiang3chi1mian4'],
-'我想要吃米饭':['wo3xiang3yao4chi1mi3fan4'],
-'对不求，我没有米饭':['dui4bu4qi3, wo3mei2you3mi3fan4'],
-'没关系我吃面':['mei2guan1xi1, wo3chi1mian4'],
-'我不忙，你男朋友呢？':['wo3bu4mang2, ni3nan2peng2you3ne']
+    '一':['yi1'],
+    '二':['er4'],
+    '三':['san1'],
+    '四':['si4'],
+    '五':['wu3'],
+    '六':['liu4'],
+    '七':['qi1'],
+    '八':['ba1'],
+    '九':['jiu3'],
+    '十':['shi2'],
+    '饮料':['yin3liao4','bebida','drink'],
+    '可乐':['ke3le4','cola','coke'],
+    '水':['shui3','water'],
+    '茶':['cha2','tea'],
+    '果汁':['guo3zhi1','fruit juice'],
+    '咖啡':['ka1fei1','coffee'],
+    '牛奶':['niu2nai3','milk'],
+    '喝酒':['he1jiu3','drink alcohol'],
+    '啤酒':['pi2jiu3','beer'],
+    '葡萄':['pu2tao2','grape'],
+    '葡萄酒':['pu2tao2jiu3','wine'],
+    '红':['hong2','red'],
+    '黄':['huang2','yellow'],
+    '蓝':['lan2','blue'],
+    '绿':['lv4','green'],
+    '黑':['hei1','black'],
+    '白':['bai2','wite'],
+    '你们好，你们要喝什么?':['ni3men2hao3, ni3men2yao4he1shen2me',''],
+    '我想要喝茶， 谢谢':['wo3xiang3yao4he1cha2, xie4xie4'],
+    '我不想喝茶，我想要喝咖啡':['wo3bu4xiang3he1cha2, wo3xiang3yao4he1ka1fei1'],
+    '林娜，这是谁？':['lin2na4, zhe4shi4shei2'],
+    '这是我妹妹':['zhe4shi4wo3mei4mei'],
+    '你好，你们想要喝什么？':['ni3hao3, ni3menxiang3yao4he1shen2me'],
+    '我要喝可乐':['wo3yao4he1ke3le4'],
+    '好的，你们都喝可乐':['hao3de, ni3mendou1he1ke3le4'],
+    '你是哪国人？':['ni3shi4na3guo2ren2'],
+    '我是中国人':['wo3shi4zhong1guo2ren2'],
+    '你几岁':['ni3ji3sui4'],
+    '我二十五岁':['wo3er4shi2wu4sui4'],
+    '你想吃什么?':['ni3xiang3chi1shen2me'],
+    '我想吃面':['wo3xiang3chi1mian4'],
+    '我想要吃米饭':['wo3xiang3yao4chi1mi3fan4'],
+    '对不起，我没有米饭':['dui4bu4qi3, wo3mei2you3mi3fan4'],
+    '没关系我吃面':['mei2guan1xi1, wo3chi1mian4'],
+    '我不忙，你男朋友呢？':['wo3bu4mang2, ni3nan2peng2you3ne'],
+    '中国':['zhong1guo2','china'],
+    '国家':['guo2jia1','country'],
+    '西班牙':['xi1ban1ya2','spain'],
+    '法国':['fa3guo2','france'],
+    '德国':['de2guo2','germany'],
+    '英国':['ying1guo2','uk','united kingdom'],
+    '美国':['mei3guo2','usa']
 }
 
 def printmd(mystr):
@@ -79,26 +86,33 @@ def print_instructions():
     printmd("please type ** finish ** to exit the app")
     printmd("This app has dynamic probabilities per char that are updated following your score.")
     printmd('----')
-print_instructions()
+#print_instructions()
     
 def normalize_w(weights):
     return weights/np.sum(weights)
     
-def update_w(weights,indx,isCorrect,probab_coef=0.05):
+def update_w(weights,indx,isCorrect,probab_coef=0.05,user=''):
     mydelta = probab_coef*(1/len(weights))
+    mytol = mydelta/2
+    mysign = 1
     if isCorrect:
-        weights[indx] = weights[indx] - mydelta
-    else:
-        weights[indx] = weights[indx] + mydelta
-    return normalize_w(weights)
+        mysign = -1
+    new_weight = weights[indx] + mysign*mydelta
+    if new_weight>mytol and (1-new_weight)>mytol:
+        weights[indx] = new_weight
+    myreturn = normalize_w(weights)
+    if user!='':
+        np.save(user,weights)
+    return myreturn
 
-def askarandom(mydict=mydict,probab_coef=0.05):
-    #TODO, with memory, choose the ones that have more failures
-    # https://stackoverflow.com/questions/4113307/pythonic-way-to-select-list-elements-with-different-probability
+def askarandom(mydict=mydict,probab_coef=0.05,user=''):
+    #TODO, save/load weights
     keys = [k for k in mydict]
     values = [mydict[k] for k in mydict]
-    weights = np.ones(len(keys))
-    weights = normalize_w(weights)
+    try:
+        weights = np.load(user)
+    except:
+        weights = normalize_w(np.ones(len(keys)))
     please_continue = True
     while please_continue:
         rand_index = int( np.random.choice(len(keys),size=1,replace=True,p=weights) )
@@ -106,9 +120,9 @@ def askarandom(mydict=mydict,probab_coef=0.05):
         true_ans = values[rand_index]
         #true_ans = pinyin.get(myrnd, format="numerical")
         printmd('# '+myrnd)
-        ans = input("Type the pinyin of the character below >")
+        ans = input("Type the pinyin >")
         #
-        weights = update_w(weights,rand_index,ans in true_ans,probab_coef=0.05)
+        weights = update_w(weights,rand_index,ans in true_ans,probab_coef=0.05,user=user)
         #
         if ans in true_ans:
             printmd("<font color='green'> ** correct ** " + str(true_ans)+" </font>")
@@ -122,4 +136,4 @@ def askarandom(mydict=mydict,probab_coef=0.05):
             please_continue = False
             break
         clear_output()
-        print_instructions()
+        #print_instructions()

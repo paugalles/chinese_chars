@@ -63,7 +63,13 @@ questions = {
 }
 
 countries = {
-
+    '中国':['zhong1guo2','china'],
+    '国家':['guo2jia1','country'],
+    '西班牙':['xi1ban1ya2','spain'],
+    '法国':['fa3guo2','france'],
+    '德国':['de2guo2','germany'],
+    '英国':['ying1guo2','uk','united kingdom'],
+    '美国':['mei3guo2','usa']
 }
 
 drinks = {
@@ -90,24 +96,24 @@ colours = {
 }
 
 sentences = {
-'你们好，你们要喝什么?':['ni3men2hao3, ni3men2yao4he1shen2me',''],
-'我想要喝茶， 谢谢':['wo3xiang3yao4he1cha2, xie4xie4'],
-'我不想喝茶，我想要喝咖啡':['wo3bu4xiang3he1cha2, wo3xiang3yao4he1ka1fei1'],
-'林娜，这是谁？':['lin2na4, zhe4shi4shei2'],
-'这是我妹妹':['zhe4shi4wo3mei4mei'],
-'你好，你们想要喝什么？':['ni3hao3, ni3me2xiang3yao4he1shen2me'],
-'我要喝可乐':['wo3yao4he1ke3le4'],
-'好的，你们都喝可乐':['hao3de, ni3mendou1he1ke3le4'],
-'你是哪国人？':['ni3shi4na3guo2ren2'],
-'我是中国人':['wo3shi4zhong1guo2ren2'],
-'你几岁':['ni3ji3sui4'],
-'我二十五岁':['wo3er4shi2wu4sui4'],
-'你想吃什么?':['ni3xiang3chi1shen2me'],
-'我想吃面':['wo3xiang3chi1mian4'],
-'我想要吃米饭':['wo3xiang3yao4chi1mi3fan4'],
-'对不求，我没有米饭':['dui4bu4qi3, wo3mei2you3mi3fan4'],
-'没关系我吃面':['mei2guan1xi1, wo3chi1mian4'],
-'我不忙，你男朋友呢？':['wo3bu4mang2, ni3nan2peng2you3ne']
+    '你们好，你们要喝什么?':['ni3men2hao3, ni3men2yao4he1shen2me',''],
+    '我想要喝茶， 谢谢':['wo3xiang3yao4he1cha2, xie4xie4'],
+    '我不想喝茶，我想要喝咖啡':['wo3bu4xiang3he1cha2, wo3xiang3yao4he1ka1fei1'],
+    '林娜，这是谁？':['lin2na4, zhe4shi4shei2'],
+    '这是我妹妹':['zhe4shi4wo3mei4mei'],
+    '你好，你们想要喝什么？':['ni3hao3, ni3menxiang3yao4he1shen2me'],
+    '我要喝可乐':['wo3yao4he1ke3le4'],
+    '好的，你们都喝可乐':['hao3de, ni3mendou1he1ke3le4'],
+    '你是哪国人？':['ni3shi4na3guo2ren2'],
+    '我是中国人':['wo3shi4zhong1guo2ren2'],
+    '你几岁':['ni3ji3sui4'],
+    '我二十五岁':['wo3er4shi2wu4sui4'],
+    '你想吃什么?':['ni3xiang3chi1shen2me'],
+    '我想吃面':['wo3xiang3chi1mian4'],
+    '我想要吃米饭':['wo3xiang3yao4chi1mi3fan4'],
+    '对不求，我没有米饭':['dui4bu4qi3, wo3mei2you3mi3fan4'],
+    '没关系我吃面':['mei2guan1xi1, wo3chi1mian4'],
+    '我不忙，你男朋友呢？':['wo3bu4mang2, ni3nan2peng2you3ne']
 }
 
 
