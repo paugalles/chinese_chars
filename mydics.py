@@ -62,6 +62,12 @@ questions = {
 '几':['ji3'],
 }
 
+jobs = {
+    '医生':['yi1sheng1','doctor','curar-nacer'],
+    '学生':['xue2sheng1','student'],
+    '老师':['lao3shi1','teacher','profesiones que se necesitan técnicas o conocimientos'],
+}
+
 countries = {
     '中国':['zhong1guo2','china'],
     '国家':['guo2jia1','country'],
@@ -69,7 +75,11 @@ countries = {
     '法国':['fa3guo2','france'],
     '德国':['de2guo2','germany'],
     '英国':['ying1guo2','uk','united kingdom'],
-    '美国':['mei3guo2','usa']
+    '美国':['mei3guo2','usa'],
+    '奥地利':['ao4di4li4','austria','?-dueño-ventaja'],
+    '意大利':['yi4da4li4','italy'],
+    '加拿大':['jia1na2da4','canada','sumar-coger-grande'],
+    '俄国':['e4guo2','russia'],
 }
 
 drinks = {
@@ -117,5 +127,88 @@ sentences = {
 }
 
 
+lessons = {
+    1:{},
+    2:{},
+    3:{},
+    4:{},
+    5:{},
+    6:{},
+    7:{},
+    8:{},
+    9:{},
+    10:{},
+    11:{},
+    12:{},
+    13:{
+        '匕':['bi3','cuchara','spoon'],
+        '耂':['lao3','viejo','old'],
+        '说':['shuo1','hablar','talk'],
+        '匚':['fang1','caja','box'],
+        '语言':['yu3yan4','idioma','language'],
+        '手扌':['shou3','hand','mano'],
+        '拿':['na2','coger','grab'],
+        '加':['jia1','sumar','sum'],
+        '刀刂':['dao1','knife','daga'],
+        '渴':['ke3','sed','thirsty'],
+        '奥地利':['ao4di4li4','austria','?-dueño-ventaja'],
+        '意大利':['yi4da4li4','italy'],
+        '加拿大':['jia1na2da4','canada','sumar-coger-grande'],
+        '俄国':['e4guo2','russia'],
+        '饿':['e4','hambre','starvation'],
+        '医生':['yi1sheng1','doctor','curar-nacer'],
+        '学生':['xue2sheng1','student'],
+        '学习':['xue2xi2','aprender genérico','generic learn'],
+        '学':['xue2','aprender','to learn'],
+        '外语':['wai4yu3','idioma extranjero','foreign language'],
+        '老师':['lao3shi1','teacher','profesiones que se necesitan técnicas o conocimientos'],
+        '出生':['chu1sheng1','nacer','born','salir-nacer'],
+        '会':['hui4','can'],
+        '工作':['gong1zuo4','trabajo','job']
+    },
+    14:{}
+}
 
+
+reverted_lessons = {
+    1:{},
+    2:{},
+    3:{},
+    4:{},
+    5:{},
+    6:{},
+    7:{},
+    8:{},
+    9:{},
+    10:{},
+    11:{},
+    12:{},
+    13:{
+        'bi3':['匕','y'],
+        'lao3':['耂','y'],
+        'shuo1':['说','y'],
+        'fang1':['匚','y'],
+        'yu3yan4':['语言','y'],
+        'shou3':['手扌','y'],
+        'na2':['拿','y'],
+        'jia1':['加','y'],
+        'dao1':['刀刂','y'],
+        'ke3':['渴','y'],
+        'ao4di4li4':['奥地利','y'],
+        'yi4da4li4':['意大利','y'],
+        'jia1na2da4':['加拿大','y'],
+        'e4guo2':['俄国','y'],
+        'e4':['饿','y'],
+        'yi1sheng1':['医生','y'],
+        'xue2sheng1':['学生','y'],
+        'xue2xi2':['学习','y'],
+        'xue2':['学','y'],
+        'wai4yu3':['外语','y'],
+        'lao3shi1':['老师','y'],
+        'chu1sheng1':['出生','y'],
+        'hui4':['会','y'],
+        'gong1zuo4':['工作','y']
+    },
+    14:{}
+}
 

@@ -76,6 +76,13 @@ mydict = {
     '美国':['mei3guo2','usa']
 }
 
+
+
+
+mydict = {**lessons[13],**reverted_lessons[13]}
+
+
+
 def printmd(mystr):
     display(Markdown(mystr))
     
