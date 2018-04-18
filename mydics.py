@@ -83,17 +83,17 @@ countries = {
 }
 
 drinks = {
-'饮料':['yin3liao4','bebida','drink'],
-'可乐':['ke3le4','cola','coke'],
-'水':['shui3','water'],
-'茶':['cha2','tea'],
-'果汁':['guo3zhi1','fruit juice'],
-'咖啡':['ka1fei1','coffee'],
-'牛奶':['niu2nai3','milk'],
-'喝酒':['he1jiu3','drink alcohol'],
-'啤酒':['pi2jiu3','beer'],
-'葡萄':['pu2tao2','grape'],
-'葡萄酒':['pu2tao2jiu3','wine']
+    '饮料':['yin3liao4','bebida','drink'],
+    '可乐':['ke3le4','cola','coke'],
+    '水':['shui3','water'],
+    '茶':['cha2','tea'],
+    '果汁':['guo3zhi1','fruit juice'],
+    '咖啡':['ka1fei1','coffee'],
+    '牛奶':['niu2nai3','milk'],
+    '喝酒':['he1jiu3','drink alcohol'],
+    '啤酒':['pi2jiu3','beer'],
+    '葡萄':['pu2tao2','grape'],
+    '葡萄酒':['pu2tao2jiu3','wine']
 }
 
 colours = {
@@ -164,9 +164,38 @@ lessons = {
         '老师':['lao3shi1','teacher','profesiones que se necesitan técnicas o conocimientos'],
         '出生':['chu1sheng1','nacer','born','salir-nacer'],
         '会':['hui4','can'],
-        '工作':['gong1zuo4','trabajo','job']
+        '工作':['gong1zuo4','trabajo','job'],
+        '日本人':['ri4ben3ren2','japanese'],
+        '日语':['ri4yu3','japansese language'],
+        '可是':['ke3shi3','but']
     },
-    14:{}
+    14:{
+        '辶':['chuo4','walk'],
+        '艹':['cao3','grass'],
+        '匕':['bi3','spoon','cuchara'],
+        '马':['ma3','caballo','horse'],
+        '言':['yan2','discurso'],
+        '冫':['bing1','hielo'],
+        '手':['shou3','mano'],
+        '饣':['shi2','food'],
+        '贝':['bei4','concha'],
+        '米':['mi3','arroz','rice'],
+        '刀刂':['dao1','daga','knife'],
+        '认识':['ren2shi4','know'],
+        '高兴':['gao1xing4','happy'],
+        '可以':['ke3yi3','may','permission'],
+        '出去':['chu1qu4','to exit','salir'],
+        '去':['qu4','go','ir'],
+        '来':['lai2','come','venir'],
+        '请':['quing3','por favor','please'],
+        '坐':['zuo4','sentarse','to sit'],
+        '问':['wen4','preguntar','ask'],
+        '姓':['xing4','apellidarse'],
+        '名字':['ming2zi1','nombrarse'],
+        '汉字':['han4zi','chinese character'],
+        '贵':['gui4','caro','expensive'],
+        '您贵':['nin2gui4','apreciado'],
+    }
 }
 
 
@@ -207,7 +236,10 @@ reverted_lessons = {
         'lao3shi1':['老师','y'],
         'chu1sheng1':['出生','y'],
         'hui4':['会','y'],
-        'gong1zuo4':['工作','y']
+        'gong1zuo4':['工作','y'],
+        'ri4ben3ren2':['日本人','japanese'],
+        'ri4yu3':['日语','japansese language'],
+        'ke3shi3':['可是','but']
     },
     14:{}
 }

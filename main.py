@@ -78,8 +78,8 @@ mydict = {
 
 
 
-
-mydict = {**lessons[13],**reverted_lessons[13]}
+#mydict = {**lessons[13],**reverted_lessons[13]}
+#mydict = {**lessons[14]}
 
 
 
